@@ -1,0 +1,37 @@
+PROJECT REQUIREMENTS
+
+Please create a JSON API to manage a car catalogue and their safety ratings. You should have two tables, "cars", "ratings".
+
+A car has the following features:
+"ID" (A unique id for each entry)
+"Make" (Ford, Opel etc.)
+"Model" (Focus, Astra, etc.)
+"Trim" ("1.6", "1.4 turbo", "FR", "SLX" etc.)
+"Year" ("2019", "2020" etc.)
+"Created At Date & Time" - when this car is recorded to the system
+
+A rating has the following properties:
+"Car ID"
+"Rating Agency Name"
+"Rating" - 0.0 to 10.0
+
+For example, agency named "Euro NCAP" may rate Ford Focus 1.6 (2020) as 7.7
+						"India NCAP" may rate the same car with 8.0
+
+Using this API, customer should be able to create cars and ratings.
+
+Using this API, customer should be able to make changes to previously created cars.
+For example, Trim name can be changed from "1.6" to "1.6 TDI". Every property except ID can be changed.
+
+Ratings can not be changed.
+
+Cars and ratings can be deleted. If a car is deleted, every rating of that car should be automatically deleted.
+
+Please watch for invalid data, a car must have a model name, it can not be an empty string etc. 
+The API should return related HTTP status codes for these types of errors.
+
+The Database should be MySQL. Please use appropriate MySQL data types.
+
+Please put the developed code to your GitHub account and share with us.
+
+

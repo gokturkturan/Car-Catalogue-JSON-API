@@ -1,0 +1,4 @@
+#gelen tüm istekleri index.php den karşılamak için.
+RewriteEngine on
+RewriteRule ^cars/$ index.php [QSA,L]
+RewriteRule ^cars/([0-9]+)/$ index.php?car_id=$1 [QSA,L]
